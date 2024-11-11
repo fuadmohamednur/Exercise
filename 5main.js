@@ -1,7 +1,11 @@
- const food = ["Apple", "Banana", "cherry"];
+ let  temperature = 25;
 
- for(let i = 0; i < food.length; i++){
-    console.log(food[i]);
+ if(temperature < 15){;
+    console.log("col");
+
+ }else if(temperature < 25){
+    console.log("warn");
+ }else{
+    console.log("hot");
+
  }
- 
-

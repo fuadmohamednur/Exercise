@@ -1,3 +1,7 @@
-for (let i = 1; i < 51; i++){
-    console.log(i);
+let age = 48;
+
+if(age >= 50){
+    console.log('Your passed')
+}else{
+    console.log('your falid')
 }
