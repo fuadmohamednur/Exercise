@@ -1,4 +1,5 @@
-const numbar = [1,2,3,4,5];
-const sum = numbar.reduce((total, num) => total + num,6);
+function calculaterArea (name="Guest"){
+    console.log(`Hello ${name}`)
+}
 
-console.log(sum);
+calculaterArea("height");

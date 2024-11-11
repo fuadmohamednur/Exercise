@@ -1,7 +1,5 @@
-let age = 48;
+const extract = ["red","greed","blue"];
 
-if(age >= 50){
-    console.log('Your passed')
-}else{
-    console.log('your falid')
-}
+const [red,greed,blue] = extract;
+  console.log(red);
+  console.log(blue);

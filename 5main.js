@@ -1,11 +1,6 @@
- let  temperature = 25;
+const car = {make: "Toyota", modal: "Corolla", year: 2020};
 
- if(temperature < 15){;
-    console.log("col");
+const {make,modal,year} = car;
 
- }else if(temperature < 25){
-    console.log("warn");
- }else{
-    console.log("hot");
-
- }
+console.log(make);
+console.log(modal);
