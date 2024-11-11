@@ -1,13 +1,4 @@
-let grade = 60;
+const numbar = [1,2,3,4,5];
+const sum = numbar.reduce((total, num) => total + num,6);
 
-// if(age < 13){
-//     console.log("You're a child.");
-// }else if(age <20){
-//     console.log("You're a teeneger.");
-// }else{
-//     console.log("You're an adult.");
-// }
-
- const message = grade >= 60 ? "pass" :"fail."
-
- console.log(message)
+console.log(sum);
