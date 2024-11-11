@@ -1,18 +1,7 @@
-// arrays
+const header = document.querySelector('#header');
 
-let colors = ["blue", "red", "green","black"];
+console.log(header);
 
-// before
-console.log(colors);
+const text = document.querySelectorAll('.text');
 
-colors.push("while");
-console.log(colors);
-
-colors.pop();
-console.log(colors);
-
-colors.unshift("yellow");
-console.log(colors);
-
-colors.shift();
-console.log(colors);
+console.log(text);

@@ -1,13 +1,15 @@
-const number = [1,2,3,];
-const allNumber = [...number,4,5,6];
 
-console.log(allNumber);
-
-
-
-function sum(...numbers) {
-    return numbers.reduce((total, num) => total + num,0);
+const list = document.querySelector('#list');
+function addItem(){
+    const newItem = document.createElement('li');
+    newItem.textContent = 'new Item'
+    list.appendChild(newItem)
 }
-console.log(sum(20,30,50,100,150));
- 
-// waa ka shEE
+
+
+function removeItem(){
+ if(list.lastChild){
+    list.removeChild(list.lastChild);
+ }
+}
+
