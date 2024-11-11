@@ -1,35 +1,24 @@
+const colorPicker = document.querySelector('#colorPicker');
+const colorPreview = document.querySelector('#colorPreview');
+const colorHistory = document.querySelector('#colorHistory');
+const clearHistoryButton = document.querySelector('#clearHistoryButton');
 
-function fetchUserData() {
-    return new Promise((resolve,reject) =>{
-         setTimeout(() => {
-          const success = true;
-          
-          if(success){
-            resolve({id: 1, name: "Sucess Massege"})
-          }else{
-            reject("Falied to fetch user data")
-          }
-         },2000);
-    })
+// Event listener for color changes
+colorPicker.addEventListener('input', function() {
+    const selectedColor = colorPicker.value;
+    colorPreview.style.backgroundColor = selectedColor;
+    addColorToHistory(selectedColor);
+});
+
+// Function to add the selected color to the history
+function addColorToHistory(color) {
+    const li = document.createElement('li');
+    li.textContent = color;
+    li.style.color = color;
+    colorHistory.appendChild(li);
 }
 
-// fetchUserData()
-//   .then((data) => console.log("User data", data))
-//    .catch((err) => console.log(err))
-//   // console.log(fetchUserData())
-
-
-
-async function displayUserData() {
-    try{
-        const user = await fetchUserData();
-        console.log(user)
-    } catch (err) {
-        console.log(err)
-    }
-}
-
-displayUserData();
-
-
-
+// Event listener for clearing history
+clearHistoryButton.addEventListener('click', function() {
+    colorHistory.innerHTML = ''; // Clear the color history list
+});
