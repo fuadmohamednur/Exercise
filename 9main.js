@@ -1,15 +1,22 @@
-
 const list = document.querySelector('#list');
+
+
 function addItem(){
-    const newItem = document.createElement('li');
+
+    const newItem = document.querySelector('li')
+
     newItem.textContent = 'new Item'
-    list.appendChild(newItem)
+    
+    newItem.appendChild(newItem)
 }
+
 
 
 function removeItem(){
- if(list.lastChild){
-    list.removeChild(list.lastChild);
- }
-}
 
+   if(list.lastChild){
+    list.lastChild(list.lastChild)
+   }else{
+    alert("saxib waa lagu ka labaxay!")
+   }
+}

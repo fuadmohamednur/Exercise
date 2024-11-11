@@ -1,11 +1,21 @@
-function operate(a,b, callback){
-    return callback(a,b)
+
+
+// function changeImage() {
+
+//     const image = document.querySelector('#image');
+
+//    const url = prompt("please enter your image url") 
+
+//     image.setAttribute('src', url)
+// }
+
+// please enter your image url
+
+
+function changeImage(){
+
+    const image = document.querySelector('#image');
+    const url = prompt("please enter your image rl")
+
+    image.setAttribute('src', url)
 }
-function multply(a,b){
-    return a * b;
-}
-function divide(a,b){
-    return a / b;
-}
-console.log("multply", operate(5,2, multply));
-console.log("divide", operate(20,5, divide));

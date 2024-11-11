@@ -2,6 +2,7 @@ const header = document.querySelector('#header');
 
 console.log(header);
 
-const text = document.querySelectorAll('.text');
+const two = document.querySelectorAll('.two');
 
-console.log(text);
+console.log(two)
+
